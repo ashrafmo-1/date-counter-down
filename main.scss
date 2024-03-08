@@ -5,6 +5,7 @@
   @include reser_heading_spaces;
   font-family: sans-serif;
 }
+
 body {
   background: url("ramadan.gif");
   background-repeat: no-repeat;
@@ -28,17 +29,20 @@ body {
       border-radius: 4px;
     }
   }
+
   & .counter_section {
     width: 70%;
     margin: auto;
     margin-top: 4rem !important;
-    .sup_title{
+
+    .sup_title {
       color: $mainColor;
       font-size: 2rem;
       background-color: #fff;
       padding: 4px 10px !important;
       border-radius: 4px;
     }
+
     .counterBox {
       // @include flex-content(space-betweem);
       background: #1a0b2e9f;
@@ -51,9 +55,10 @@ body {
       align-items: center;
       margin-top: 4rem !important;
       width: 100%;
-      height: 20rem;
+      height: 100%;
       border-radius: 4px;
       padding: 20px;
+
       .box {
         @include flex-content(center);
         width: 20rem;
@@ -65,12 +70,16 @@ body {
         flex-direction: column;
         width: 100%;
         gap: 0.6rem;
-        & h4, span {
+
+        & h4,
+        span {
           color: #ffffff;
         }
+
         h4 {
           font-size: 4.4rem;
         }
+
         & span {
           font-size: 2.4rem;
         }
