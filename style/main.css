@@ -21,8 +21,13 @@
 }
 
 body {
-  background-color: #eee;
-  height: 100vh;
+  background: url("ramadan.gif");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 110vh;
+  min-height: 100vh;
+  max-height: 130vh;
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
@@ -44,6 +49,9 @@ body .header h2 {
   margin-top: 1.3rem !important;
   text-transform: capitalize;
   color: teal;
+  background-color: #fff;
+  padding: 4px 10px !important;
+  border-radius: 4px;
 }
 body .counter_section {
   width: 70%;
@@ -53,29 +61,31 @@ body .counter_section {
 body .counter_section .sup_title {
   color: teal;
   font-size: 2rem;
+  background-color: #fff;
+  padding: 4px 10px !important;
+  border-radius: 4px;
 }
 body .counter_section .counterBox {
-  margin-top: 4rem !important;
-  background-color: teal;
-  width: 100%;
-  height: 20rem;
-  border-radius: 4px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  background: rgba(26, 11, 46, 0.6235294118);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  display: -ms-grid !important;
+  display: grid !important;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 40px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-top: 4rem !important;
+  width: 100%;
+  height: 20rem;
+  border-radius: 4px;
   padding: 20px;
 }
 body .counter_section .counterBox .box {
-  width: 20rem;
-  height: 10rem;
-  background-color: rgb(0, 255, 238);
-  border-radius: 4px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -85,14 +95,21 @@ body .counter_section .counterBox .box {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  width: 20rem;
+  height: 10rem;
+  background: rgba(26, 11, 46, 0.6235294118);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border-radius: 4px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  width: 100%;
   gap: 0.6rem;
 }
 body .counter_section .counterBox .box h4, body .counter_section .counterBox .box span {
-  color: teal;
+  color: #ffffff;
 }
 body .counter_section .counterBox .box h4 {
   font-size: 4.4rem;
